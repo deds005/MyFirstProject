@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioStudy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id = 'cab'>
+        <div class = 'menu'>
+            <button id = 'botoes1' ><strong><a href="index.html">Inicio</a></strong></button>
+            <button id = 'botoes2' onmouseover="abrirop()" onmouseout="fecharop()"> 
+                <strong><a href="quiz.html">Quiz</a></strong> 
+                <ul id = 'opcoes'>
+                    <li id = 'li1' onmouseover="liover(1)" onmouseout="liout(1)"><a href="/quiz1.html">Quiz 1</a></li>
+                    <li id = 'li2'onmouseover="liover(2)" onmouseout="liout(2)"><a href="#">Quiz 2</a></li>
+                    <li id = 'li3'onmouseover="liover(3)" onmouseout="liout(3)"><a href="#">Quiz 3</a></li>
+                </ul>
+            </button>
+            <button id = 'botoes3'><strong><a href="material.html">Material</a></strong></button>
+            <button id = 'botoes4'><strong><a href="login.html">Login</a></strong></button>
+        </div>
+        <!--<div class="completar"></div>-->
+        <span><a href="index.html"><img src="/Nature on screen-pana.png" alt="icone"></a></span>
+        <span><a href="index.html"><h1 id ='titulo'>BioStudy</h1></a></span>
+    </header>
+    
+    <main id = 'quizzes'>
+        <a href="quiz1.html" class = 'quiz1'> 
+            <h2>Botânica</h2><br><br>
+            <img src="/People taking care of plants-rafiki.png" alt="" style="height: 200px; width: 210px;">
+            
+        </a>
+        <a href="" class = 'quiz2'> 
+            <h2>Quiz 2</h2><br><br>
+            <img src="/World Oceans Day-amico.png" alt="" style="height: 200px; width: 210px;">
+        </a>
+        <a href="" class = 'quiz3'> 
+            <h2>Quiz 3</h2><br><br>
+            <img src="/Bigfoot-pana.png" alt="" style="height: 200px; width: 210px;">
+        </a>
+    </main>
+
+    <script src="script.js"></script>
+
+
+    
+</body>

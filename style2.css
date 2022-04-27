@@ -1,0 +1,71 @@
+.material{
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.material-flexbox{
+    position: absolute;
+    top: 25%;
+    left: 16%;
+    width: 65%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.m1, .m2, .m3{
+    position:relative;
+    background-color: black;
+    width: 40%;
+    height: 180px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: botoes 1s ease 1s;
+    animation-fill-mode: forwards;
+    transition: all 0.5s ease;
+    
+}
+@keyframes botoes {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+.m1:hover, .m2:hover, .m3:hover {
+    box-shadow: 2px 2px black;
+    bottom: 1%;
+    border: rgb(0, 204, 255) solid 5px;
+}
+/* .m1:hover .t1, .m2:hover .t2{
+    color: white;
+} */
+.m3{
+    align-items: center;
+    margin-left: 34%;
+    margin-top: 40px;
+    flex-grow: 0;
+}
+.t1, .t2, .t3{
+    color: #000;
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: Comic Sans MS, Comic Sans, cursive ;
+    transition: all 0.5s ease;
+}
+.material-flexbox .m1 img, .material-flexbox .m2 img, .material-flexbox .m3 img{
+    width: 100px;
+    height: 100px;
+}

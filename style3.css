@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    height: 25%;
+    z-index: 999;
+}
+h1#titulo{
+    color: white;
+    display: inline;
+    position: relative;
+    top: 25%;
+    left: 4%;
+    text-align: center;
+    font-size: 60px;
+    animation: botoes 2s ease;
+    animation-fill-mode: forwards;
+    font-family: Georgia, serif;
+    opacity: 0%;
+    animation-delay: 1s;
+}
+.menu{
+    position: relative;
+    top: 20%;
+    width: 45%;
+    height: 50%;
+    background-color: green;
+    float: right;
+    border-radius: 50px;
+    text-align: justify;
+    transform: translateX(0px);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    animation: inicio 2s ease ;
+    animation-fill-mode: forwards;
+}
+
+/*.completar{
+    position: relative;
+    top: 20%;
+    width: 5%;
+    height: 50%;
+    background-color: green;
+    float: right;
+    left: 48%;
+
+}*/
+
+@keyframes inicio {
+    0%{
+        transform: translateX(100px);
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+    }
+    50%{ 
+        transform: translateX(-500px);
+        transform: rotate(720);
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+    }
+    100%{
+        animation-timing-function: ease-out;
+    }
+    
+}
+@keyframes botoes {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+
+#botoes2, #botoes3, #botoes4{
+    position: relative;
+    top: 35%;
+    left: 12%;
+    margin-left: 8%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    animation: botoes 1s ease;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    animation-delay: 2s;
+
+}
+
+#botoes1{
+    position: relative;
+    top: 35%;
+    left: 12%;
+    margin-left: 2%;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display:ruby;
+    animation: botoes 1s ease;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+    animation-delay: 2s;
+
+}
+
+#botoes1:hover, #botoes2:hover, #botoes3:hover, #botoes4:hover, a:hover{
+    color: rgba(255, 255, 255, 0.815);
+    cursor: pointer;
+}
+@keyframes imagem {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+    
+}
+img{
+    position: relative;
+    top: 5%;
+    width: 15%;
+    height: 80%;
+    animation: imagem 2s ease-out;
+}
+#opcoes{
+    list-style: none;
+    position: relative;
+    top: 10px;
+    margin-top: 10px;
+    background-color: green;
+    width: 100px;
+    padding-bottom: 10px;
+    opacity: 0;
+    z-index: 999;
+}
+li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 6px;
+    padding-top: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    z-index: 2;
+
+}
+.main{
+    padding-top: 20%;
+    padding-left: 8%;
+    text-align: center;
+}
+.tema{
+    color: white;
+    font-size: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    /*left: 25%;*/
+    animation: imagem 2s ease-in-out;
+    text-align: left;
+}
+
+
+/* Quiz */
+
+main{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 50px;
+    width: 90%;
+    height: 50%;
+    z-index: 0;
+}
+.titulo-quiz{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(56, 176, 0);
+    border-radius: 10px;
+}
+.titulo-quiz h1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: white;
+}
+
+.questao, #area-questao{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family:Comic Sans MS, Comic Sans, cursive ;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    height: fit-content;
+}
+.questao label, .questao input[type=radio]{
+    display: none;
+    position: relative;
+    top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 3px 3px 3px 3px;
+} 
+.questao input[type=radio]{
+    display: none;
+    margin-bottom: 20px;
+}
+
+.proximo{
+    width: fit-content;
+    position: relative;
+    left: 46%;
+    margin-right: 10px;
+    font-size: 20px;
+    bottom: 10%;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(56, 176, 0);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 400;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: all, 1s, ease;
+    cursor: pointer;
+}
+.final{
+    width: fit-content;
+    position: relative;
+    left: 40%;
+    margin-right: 10px;
+    font-size: 20px;
+    bottom: 10%;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(56, 176, 0);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 400;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: all, 1s, ease;
+    cursor: pointer;
+}
+.botoes-quiz{
+    position: relative;
+    bottom: 50%;
+}
+#fin{
+    display: none;
+}
+.proximo:hover, .final:hover{
+    color: rgb(0, 128, 0);
+    background-color: rgb(2, 214, 30);
+    cursor: pointer;
+}
+#nome{
+    margin-top: 10px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+#alert{
+    color: red;
+}
+#attention{
+    color: yellow;
+}
+#correct{
+    color: rgb(2, 175, 2);
+}
+#area-res{
+    text-align: left;
+    font-size: 10px;
+    margin-top: 5px;
+}
+#area-res h1{
+    display: inline;
+    color: rgb(204, 255, 51);
+}
+#area-res div p{
+    font-size: 18px;
+}
+
+
+/* pagina login */

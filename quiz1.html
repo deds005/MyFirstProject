@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/d91fcdff59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id = 'cab'>
+        <div class = 'menu'>
+            <button id = 'botoes1' ><strong><a href="index.html">Inicio</a></strong></button>
+            <button id = 'botoes2' onmouseover="abrirop()" onmouseout="fecharop()"> 
+                <strong><a href="quiz.html">Quiz</a></strong> 
+                <ul id = 'opcoes'>
+                    <li id = 'li1' onmouseover="liover(1)" onmouseout="liout(1)">Quiz 1</li>
+                    <li id = 'li2'onmouseover="liover(2)" onmouseout="liout(2)">Quiz 2</li>
+                    <li id = 'li3'onmouseover="liover(3)" onmouseout="liout(3)">Quiz 3</li>
+                </ul>
+            </button>
+            <button id = 'botoes3'><strong><a href="material.html">Material</a></strong></button>
+            <button id = 'botoes4'><strong><a href="login.html">Login</a></strong></button>
+        </div>
+        <!--<div class="completar"></div>-->
+        <!-- <span><a href="index.html"><img src="icone.png" alt="icone"></a></span> -->
+        <span><a href="index.html"><h1 id ='titulo'>Quiz 01</h1></a></span>
+    </header>
+
+    <main class="areaquiz">
+        <div class="titulo-quiz" id="titulo-quiz"><h1>Botânica</h1></div>
+        <br><br>
+        <div id="area-questao">
+            <div class="questao" id="questao">
+                <h2 id = 'enunciado'>Digite seu nome:</h2>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <label for="op1" id = 'opl0'>Briófitas</label>     <input type="radio" name="1" id="op1" class="op-quiz" value="op1" onclick="checar()" checked><br>
+                <label for="op2"  id = 'opl1'>Pteridófitas</label>     <input type="radio" name="1" id="op2" class="op-quiz" value="op2" onclick="checar()"><br>
+                <label for="op3"  id = 'opl2'>Gimnospermas</label>     <input type="radio" name="1" id="op3" class="op-quiz" value="op3" onclick="checar()"><br>
+                <label for="op4"  id = 'opl3'>Angiospermas</label>     <input type="radio" name="1" id="op4" class="op-quiz" value="op4" onclick="checar()">
+            </div>
+        </div>
+
+        <div class="botoes-quiz" id="botoes-quiz"><button class="proximo" id="pro" onclick="clicar()">Iniciar</button><button class="proximo" id="fin" onclick = 'clicar(), finalizar()'>Finalizar</button></div>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

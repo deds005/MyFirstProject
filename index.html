@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioStudy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d91fcdff59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id = 'cab'>
+        <div class = 'menu'>
+            <i class="fas fa-bars" id="bar"></i>
+            <button id = 'botoes1' ><strong><a href="index.html">Inicio</a></strong></button>
+            <button id = 'botoes2' onmouseover="abrirop()" onmouseout="fecharop()"> 
+                <strong><a href="quiz.html">Quiz</a></strong> 
+                <ul id = 'opcoes'>
+                    <li id = 'li1' onmouseover="liover(1)" onmouseout="liout(1)"> <a href="/quiz1.html">Quiz 1</a></li>
+                    <li id = 'li2'onmouseover="liover(2)" onmouseout="liout(2)">Quiz 2</li>
+                    <li id = 'li3'onmouseover="liover(3)" onmouseout="liout(3)">Quiz 3</li>
+                </ul>
+            </button>
+            <button id = 'botoes3'><strong><a href="material.html">Material</a></strong></button>
+            <button id = 'botoes4'><strong><a href="login.html">Login</a></strong></button>
+        </div>
+        <!--<div class="completar"></div>-->
+        <span><a href="index.html"><img src="/Nature on screen-pana.png" alt="icone"></a></span>
+        <span><a href="index.html"><h1 id ='titulo'>BioStudy</h1></a></span>
+    </header>
+
+    <main class = 'main'>
+        <!--<img src="/coluna-decorativa.png" alt="coluna" class = 'coluna' style="margin-right: 350px;">-->
+        <h1 class="tema">
+            Bem vindo ao<br>
+            BioStudy! 
+        </h1> 
+        <img src="/Ecosystem-amico.png" class="foto-inicio">
+        <!--<img src="/coluna-decorativa.png" alt="coluna" class="coluna" style="margin-left: 340px;"> <div> Ícones feitos por <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>-->
+        <!--<div class = 'sop'>
+            <p id = 'soptxt'>
+                Aqui você vai encontrar materiais de estudo para assuntos de biologia, com a possibilidade de praticar e testar seus conhecimento nos nossos quizes e ainda salvar o progresso e compartilhar no portal do professor o seu desempenho.
+            </p>
+        </div>-->
+    </main>
+    <footer>
+        <div class="sop">
+            <h1 >Sobre o projeto</h1>
+            <p style="font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; font-size: 22px; margin-top: 10px;">Aqui você vai encontrar materiais de estudo para assuntos de biologia, com a possibilidade de praticar e testar seus conhecimentos nos nossos quizzes e ainda salvar o progresso e compartilhar no portal do professor o seu desempenho.</p>
+            <div class="fotos">
+                <span class="fotos1"><img src="/3x4.jpeg" class="i1" alt=""></span>
+                <span class="fotos2"><img src="/leandro.jpeg" class="i2" alt=""></span>
+                <span class="fotos3"><img src="/weverton.jpeg" class="i3" alt=""></span>
+            </div>
+            <div class="nome-people">
+                <span class="s1">
+                    André
+                </span>
+                <span class="s2">
+                    Leandro
+                </span>
+                <span class="s3">
+                    Weverton
+                </span>
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Contato</h1>
+            <div class="tel1"><i class="fas fa-phone-alt"></i> &nbsp;&nbsp; (85) 9.9999-9999</div>
+            <div class="tel2"><i class="fas fa-phone-alt"></i> &nbsp;&nbsp; (85) 9.9999-9999</div>
+            <div class="em1"><i class="fas fa-envelope"></i>  leandro.soares.oliveira63@aluno.ifce.edu.br</div>
+            <div class="em2"><i class="fas fa-envelope"></i>  francisco.weverton.oliveira62@aluno.ifce.edu.br</div>
+            <div class="em2"><i class="fas fa-envelope"></i>  andre.bessa.moura61@aluno.ifce.edu.br</div>
+            <div class="local"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Rua dos doidos, 444, Japão, Júpiter</div>
+
+        </div>
+        <div class="creditos">
+            <h1>Créditos</h1>
+            <div class="links">
+                <a href="https://www.google.com/amp/s/www.todamateria.com.br/botanica-o-estudo-das-plantas/amp/" target="_blank">link</a>
+                <a href="https://sites.google.com/site/botanicaemsaladeaula/as-plantas-ocupam-a-terra-evolucao-do-reino-plantae" target="_blank">link</a>
+                <a href="https://www.passeidireto.com/arquivo/48486001/mapamental-biologia-histologia" target="_blank">link</a>
+                <a href="https://m.brasilescola.uol.com.br/amp/biologia/fototropismo.htm" target="_blank">link</a>
+                <a href="https://br.freepik.com/fotos/fundo" target="_blank">Fundo foto criado por dashu83 - br.freepik.com</a>
+                <a href="https://www.youtube.com/watch?v=EAVhBfwLUhk" target="_blank">Video aula material</a>
+                <a href="https://storyset.com/user">User illustrations by Storyset</a>
+                <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
+                <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
+                <a href="https://storyset.com/event">Event illustrations by Storyset</a>
+                <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
